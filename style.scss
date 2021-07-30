@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+$primary_color:orange;
+$secondary_color:purple;
+$background:url("https://live.staticflickr.com/4103/5111059737_c45e8bfa23_b.jpg");
+h3{
+    font-size:35px !important;
+    color:$secondary_color;
+    
+    
+}
+.btn-success:hover {
+     background-color:$primary_color;
+}
+canvas{
+    animation-name:example;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+
+}
+@keyframes example{
+  from{
+      box-shadow: 1px 1px 38px $primary_color;
+  }
+  to{
+      box-shadow:1px 1px 38px $secondary_color;
+  }   
+}
+body{
+    background-image: $background;
+    font-family: 'Kosugi Maru', sans-serif;
+}
